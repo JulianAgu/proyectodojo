@@ -1,0 +1,222 @@
+@mixin sizes($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+.titleHome {
+    color: #961212 ;
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    font-size: 200%;
+    font-weight: lighter;
+    margin-top: -30px;
+    
+}
+
+.infoInicial {
+    color: #0e0c58;
+}
+
+
+.button--Insc {
+    border-radius: 10px;
+    margin-left: 700px;
+    margin-top: 40px;
+}
+
+.home__section {
+    margin-top: 100px;
+    
+    
+}
+
+.footer__home {
+    text-align: right;
+    margin-top: auto;
+    
+}
+.footer__home a{
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bolder;
+    
+}
+
+.info{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: lighter;
+}
+
+.horario {
+    margin-left: 500px;
+    width: 500px;
+}
+.horario td {
+   text-align: center;
+}
+
+body {
+    background-image: url(../fotos/black-belt.jpg);
+    background-color: rgb(95, 95, 95);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    
+}
+.bodyHome {
+    background-image: url(../fotos/alumnos.jpg);
+    background-color: rgb(80, 80, 80);
+    background-blend-mode: soft-light;
+    background-size: cover;
+}
+
+section {
+    color: white;
+}
+table {
+    td {
+        color: white;
+        text-align: center;
+    }
+    li {
+        list-style-type: circle;
+    }
+}
+.table td, .table th {
+    vertical-align: middle
+}
+
+header {
+    position: sticky;
+    border: 1px inset black;
+    background-color: rgba(27, 25, 25, 0.363);
+    color: rgb(231, 206, 206); 
+	height: 50px;
+	margin-bottom: 0;
+}
+
+nav {
+	height: 50px;
+}
+
+.nav--estilo {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a {
+    @extend .nav--estilo;
+}
+
+nav ul li a:hover {
+	font-size: 1.2rem;
+	@extend .nav--estilo;
+}
+
+#esqueleto{
+    display: grid;
+    grid-template-rows: 5% auto auto;
+    grid-template-areas: "header"
+                         "info"
+                         "fot";
+    
+}
+
+.header__home {
+    grid-area: header;
+}
+.home__section--info{
+    grid-area: info;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer__home {
+    grid-area: fot;
+    padding-top: 5rem;
+}
+
+.senseiGroup {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sensei img{
+    width: 9rem;
+    height: 11rem;
+    
+}
+.sensei p{
+    padding: 5px;
+}
+.sensei{
+    display: flex;
+    padding: 10px;
+}
+
+.sensei img:hover{
+    @include sizes(200px,200px);
+    animation-name: imagines;
+    animation-duration: 2s;
+}
+@keyframes imagines{
+    from{
+        width: 9rem;
+        height: 11rem;
+    }
+    to{
+        @include sizes(200px,200px);
+        width: 200px;
+        height: 200px;
+    }
+}
+#btn--Inscripcion {
+    color: black;
+
+}
+.card-body {
+    color: black;
+}
+.card-icon{
+    height: 3.5em;
+}
+.card {
+    padding-top: 0.6250em;
+}
+a {
+    img{
+        width: 3em;
+    }
+}
+@media (min-width: 768px){
+    .home__section{
+       height: 600px;
+    }
+    nav.navbar {
+        @media (min-width: 768px){
+            .home__section{
+               height: 600px;
+            }
+            nav.navbar {
+                display: flex;
+	            justify-content: space-between;
+            }
+            #navbarNav{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+        }
+    }
+ 
+
+
+}
+
+@media (max-width:768px){
+    #navbarNav{
+       background-color: white;
+    }
+}
+
+
+

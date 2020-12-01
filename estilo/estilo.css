@@ -1,0 +1,253 @@
+.titleHome {
+  color: #961212;
+  font-family: 'Anton', sans-serif;
+  font-style: italic;
+  font-size: 200%;
+  font-weight: lighter;
+  margin-top: -30px;
+}
+
+.infoInicial {
+  color: #0e0c58;
+}
+
+.button--Insc {
+  border-radius: 10px;
+  margin-left: 700px;
+  margin-top: 40px;
+}
+
+.home__section {
+  margin-top: 100px;
+}
+
+.footer__home {
+  text-align: right;
+  margin-top: auto;
+}
+
+.footer__home a {
+  text-decoration: none;
+  font-size: 150%;
+  font-weight: bolder;
+}
+
+.info {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: lighter;
+}
+
+.horario {
+  margin-left: 500px;
+  width: 500px;
+}
+
+.horario td {
+  text-align: center;
+}
+
+body {
+  background-image: url(../fotos/black-belt.jpg);
+  background-color: #5f5f5f;
+  background-blend-mode: soft-light;
+  background-size: cover;
+}
+
+.bodyHome {
+  background-image: url(../fotos/alumnos.jpg);
+  background-color: #505050;
+  background-blend-mode: soft-light;
+  background-size: cover;
+}
+
+section {
+  color: white;
+}
+
+table td {
+  color: white;
+  text-align: center;
+}
+
+table li {
+  list-style-type: circle;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  border: 1px inset black;
+  background-color: rgba(27, 25, 25, 0.363);
+  color: #e7cece;
+  height: 50px;
+  margin-bottom: 0;
+}
+
+nav {
+  height: 50px;
+}
+
+.nav--estilo, nav ul li a, nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-size: 1.2rem;
+}
+
+#esqueleto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5% auto auto;
+      grid-template-rows: 5% auto auto;
+      grid-template-areas: "header" "info" "fot";
+}
+
+.header__home {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.home__section--info {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: info;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer__home {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: fot;
+  padding-top: 5rem;
+}
+
+.senseiGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sensei img {
+  width: 9rem;
+  height: 11rem;
+}
+
+.sensei p {
+  padding: 5px;
+}
+
+.sensei {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.sensei img:hover {
+  width: 200px;
+  height: 200px;
+  -webkit-animation-name: imagines;
+          animation-name: imagines;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes imagines {
+  from {
+    width: 9rem;
+    height: 11rem;
+  }
+  to {
+    width: 200px;
+    height: 200px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@keyframes imagines {
+  from {
+    width: 9rem;
+    height: 11rem;
+  }
+  to {
+    width: 200px;
+    height: 200px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+#btn--Inscripcion {
+  color: black;
+}
+
+.card-body {
+  color: black;
+}
+
+.card-icon {
+  height: 3.5em;
+}
+
+.card {
+  padding-top: 0.6250em;
+}
+
+a img {
+  width: 3em;
+}
+
+@media (min-width: 768px) {
+  .home__section {
+    height: 600px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 768px) {
+  nav.navbar .home__section {
+    height: 600px;
+  }
+  nav.navbar nav.navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav.navbar #navbarNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  #navbarNav {
+    background-color: white;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
