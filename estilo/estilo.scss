@@ -25,64 +25,42 @@
 }
 
 .home__section {
-    margin-top: 100px;
-    
-    
+    margin-top: 60px; 
 }
 
 .footer__home {
     text-align: right;
     margin-top: auto;
-    
 }
 .footer__home a{
     text-decoration: none;
     font-size: 150%;
     font-weight: bolder;
-    
 }
 
 .info{
     font-family: 'Fjalla One', sans-serif;
     font-weight: lighter;
 }
-
-.horario {
-    margin-left: 500px;
-    width: 500px;
-}
-.horario td {
-   text-align: center;
-}
-
 body {
     background-image: url(../fotos/black-belt.jpg);
     background-color: rgb(95, 95, 95);
     background-blend-mode: soft-light;
     background-size: cover;
-    
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 .bodyHome {
     background-image: url(../fotos/alumnos.jpg);
     background-color: rgb(80, 80, 80);
     background-blend-mode: soft-light;
     background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    margin-bottom: 8px;
 }
-
 section {
     color: white;
-}
-table {
-    td {
-        color: white;
-        text-align: center;
-    }
-    li {
-        list-style-type: circle;
-    }
-}
-.table td, .table th {
-    vertical-align: middle
 }
 
 header {
@@ -173,6 +151,9 @@ nav ul li a:hover {
     color: black;
 
 }
+.btn-insc {
+    margin-top: 2em;
+}
 .card-body {
     color: black;
 }
@@ -187,10 +168,24 @@ a {
         width: 3em;
     }
 }
+.carousel-item {
+    overflow: hidden;
+    width: 100%;
+    height: 45em;
+}
+.carousel_img-size{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-img {
+    height: auto;
+    width: 100%;
+
+}
+
 @media (min-width: 768px){
-    .home__section{
-       height: 600px;
-    }
     nav.navbar {
         @media (min-width: 768px){
             .home__section{
