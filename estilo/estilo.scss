@@ -189,7 +189,7 @@ a {
     nav.navbar {
         @media (min-width: 768px){
             .home__section{
-               height: 600px;
+               height: 37.5em;
             }
             nav.navbar {
                 display: flex;
@@ -202,14 +202,40 @@ a {
             }
         }
     }
- 
-
-
 }
 
 @media (max-width:768px){
     #navbarNav{
        background-color: white;
+    }
+    .navbar-collapse {
+        width: 100vw;
+        left: 0;
+        position: absolute;
+        top:   4.375em;
+        padding:  1.875em;
+        z-index: 10;
+        border-bottom: solid black 1px ;
+       
+    }
+    .home__section{
+        z-index: -1;
+    }
+    header {
+        border: none;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background-color: white;
+    }
+    .navbar {
+        height: 5em;
+    }
+    section{
+        padding: 5em;
+    }
+    .card{
+        margin-bottom: 3.125em;
     }
 }
 
