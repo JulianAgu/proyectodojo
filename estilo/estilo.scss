@@ -230,13 +230,53 @@ a {
     }
     .navbar {
         height: 5em;
+        background-color: white;
     }
     section{
         padding: 5em;
     }
     .card{
-        margin-bottom: 3.125em;
+        margin-bottom: 3.125em;     
     }
+    .contenedor{
+        padding: 15px;
+          border: 1px solid white;
+        border-top: none;
+        padding-top: 0;
+        position: relative;
+        margin-top: 30px;
+      }
+      
+      .titulo{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: -14px;
+        left: -15px;
+      }
+      .titulo::before{
+        content:"";
+        height: 1px;
+        width: 3%;
+        background-color: white;
+        position: relative;
+        left: 0;
+        top:-5px;
+      }
+      .titulo::after{
+        content:"";
+        height: 1px;
+        width: calc(100% - 30px);
+        background-color: white;
+        position: relative;
+        right: -30px;
+        top: -5px;
+      }
+      .titulo h2{
+        margin: 0;
+        margin-left: 15px;
+      }
 }
 
 

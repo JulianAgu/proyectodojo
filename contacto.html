@@ -39,34 +39,43 @@
     </header>
     <section class="container">
       <article> 
-        <form action="">
-            <fieldset>
-                <legend> Contacto </legend>
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" placeholder="Ej: Johnny Lawrence">
-                <br>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="Ej: cobra@kai.com">
-                <br>
-                <label for="nivel">Nivel de karate:</label>
-                <select name="" id="nivel">
-                    <option value="">Miyagi-Do</option>
-                    <option value="">Principiante</option>
-                    <option value="">Intermedio</option>
-                    <option value="">Avanzado</option>
-                </select>
-                <br>
-                <label for="checkbox">¿Desea recibir el Newsletter?</label>
-                <input type="checkbox" id="checkbox">
-                <br>
-                <label for="coments">Dejanos tu comentario!</label>
-                <br>
-                <textarea name="" id="coments" cols="40" rows="5"></textarea>
-                <br>
-                <input type="reset" value="Limpiar Formulario">
-                <input type="submit" value="Enviar">
-            </fieldset>
-        </form>
+        <div class="contenedor">
+          <div class="titulo">
+            <h2>Contacto</h2>
+          </div>
+          <form action="" style="
+            margin-top: 15px;
+        ">
+                    <fieldset>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" placeholder="Ej: Johnny Lawrence">
+                        <br>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="Ej: cobra@kai.com">
+                        <br>
+                        <label for="nivel">Nivel de karate:</label>
+                        <select name="" id="nivel">
+                            <option value="">Miyagi-Do</option>
+                            <option value="">Principiante</option>
+                            <option value="">Intermedio</option>
+                            <option value="">Avanzado</option>
+                        </select>
+                        <br>
+                        <label for="checkbox">¿Desea recibir el Newsletter?</label>
+                        <input type="checkbox" id="checkbox">
+                        <br>
+                        <label for="coments">Dejanos tu comentario!</label>
+                        <br>
+                        <textarea name="" id="coments" cols="40" rows="5" style="
+            /* margin-right: 10px; */
+            max-width: 100%;
+        "></textarea>
+                        <br>
+                        <input type="reset" value="Limpiar Formulario">
+                        <input type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+        </div>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           Exercitationem aspernatur dolorem labore est aliquam perferendis
