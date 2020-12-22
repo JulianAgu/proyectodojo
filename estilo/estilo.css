@@ -17,19 +17,26 @@
 }
 
 section {
-  padding-top: 1.2em;
+  padding-top: 2em;
   color: white;
 }
 
-.footer__home {
+footer {
   text-align: right;
   margin-top: auto;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
-.footer__home a {
+footer a {
   text-decoration: none;
   font-size: 150%;
   font-weight: bolder;
+}
+
+.footer__home {
+  position: unset;
 }
 
 .info {
@@ -88,11 +95,6 @@ nav ul li a:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.footer__home {
-  grid-area: fot;
-  padding-top: 5rem;
 }
 
 .senseiGroup {
@@ -202,12 +204,6 @@ a img {
 .carousel-img {
   height: auto;
   width: 100%;
-}
-
-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
 }
 
 @media (min-width: 991px) and (min-width: 768px) {

@@ -23,19 +23,26 @@
 }
 
 section {
-    padding-top: 1.2em;
+    padding-top: 2em;
     color: white;
 }
 
-.footer__home {
+footer{
     text-align: right;
     margin-top: auto;
-}
-.footer__home a{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    a {
     text-decoration: none;
     font-size: 150%;
     font-weight: bolder;
+    }
 }
+.footer__home {
+    position: unset;
+}
+
 
 .info{
     font-family: 'Fjalla One', sans-serif;
@@ -89,11 +96,6 @@ nav ul li a:hover {
     grid-area: info;
     justify-self: center;
     align-self: center;
-}
-
-.footer__home {
-    grid-area: fot;
-    padding-top: 5rem;
 }
 
 .senseiGroup {
@@ -168,11 +170,9 @@ a {
     width: 100%;
 
 }
-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
+
+
+
 @media (min-width: 991px){
     nav.navbar {
         @media (min-width: 768px){
