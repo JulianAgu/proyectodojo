@@ -215,7 +215,7 @@ iframe {
   text-align: center;
 }
 
-.fix1 {
+.distance-ft {
   padding-bottom: 50px;
 }
 
@@ -355,6 +355,13 @@ iframe {
   }
   .sensei-pic {
     display: block;
+  }
+  .sensei-text {
+    margin-left: -13px;
+    margin-top: 15px;
+  }
+  .sensei_mobile-pic {
+    margin-left: 30%;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
