@@ -21,24 +21,6 @@ section {
   color: white;
 }
 
-footer {
-  text-align: right;
-  margin-top: auto;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
-footer a {
-  text-decoration: none;
-  font-size: 150%;
-  font-weight: bolder;
-}
-
-.footer__home {
-  position: unset;
-}
-
 .info {
   font-family: 'Fjalla One', sans-serif;
   font-weight: lighter;
@@ -60,7 +42,6 @@ body {
   background-size: cover;
   background-position-x: center;
   background-repeat: no-repeat;
-  margin-bottom: 8px;
 }
 
 header {
@@ -163,7 +144,8 @@ nav ul li a:hover {
 }
 
 .btn-insc {
-  margin-top: 2em;
+  margin: 2%;
+  margin-bottom: 10%;
 }
 
 .card-body {
@@ -204,6 +186,25 @@ a img {
 .carousel-img {
   height: auto;
   width: 100%;
+}
+
+.footer-web {
+  background-color: #02010f;
+  color: white;
+}
+
+.footer-web img {
+  height: 8em;
+}
+
+.footer--icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (min-width: 991px) and (min-width: 768px) {
@@ -266,7 +267,7 @@ a img {
     background-color: white;
   }
   section {
-    padding: 5em;
+    padding: 7em;
   }
   .card {
     margin-bottom: 3.125em;
@@ -314,6 +315,18 @@ a img {
   .titulo h2 {
     margin: 0;
     margin-left: 15px;
+  }
+  .footer--icons {
+    display: inline-block;
+  }
+  .footer--icons a {
+    padding-right: 16px;
+  }
+  .footer-web {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

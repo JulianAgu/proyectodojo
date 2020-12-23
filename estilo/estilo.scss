@@ -27,23 +27,6 @@ section {
     color: white;
 }
 
-footer{
-    text-align: right;
-    margin-top: auto;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    a {
-    text-decoration: none;
-    font-size: 150%;
-    font-weight: bolder;
-    }
-}
-.footer__home {
-    position: unset;
-}
-
-
 .info{
     font-family: 'Fjalla One', sans-serif;
     font-weight: lighter;
@@ -63,7 +46,7 @@ body {
     background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
-    margin-bottom: 8px;
+    
 }
 
 header {
@@ -138,7 +121,8 @@ nav ul li a:hover {
 
 }
 .btn-insc {
-    margin-top: 2em;
+   margin: 2%;
+   margin-bottom: 10%;
 }
 .card-body {
     color: black;
@@ -168,9 +152,20 @@ a {
 .carousel-img {
     height: auto;
     width: 100%;
-
 }
 
+.footer-web {
+    background-color: rgb(2, 1, 15);
+    color: white;
+    img {
+        height: 8em;
+    }
+}
+.footer--icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 @media (min-width: 991px){
@@ -224,7 +219,8 @@ a {
         background-color: white;
     }
     section{
-        padding: 5em; 
+        padding: 7em; 
+       
     }
     .card{
         margin-bottom: 3.125em;     
@@ -267,6 +263,16 @@ a {
     .titulo h2{
         margin: 0;
         margin-left: 15px;
+    }
+    .footer--icons{
+        display: inline-block;
+        a{
+            padding-right: 16px;
+        }
+    }
+    .footer-web{
+       display: flex;
+       text-align: center;
     }
 }
 
