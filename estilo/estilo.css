@@ -215,6 +215,10 @@ iframe {
   text-align: center;
 }
 
+.fix1 {
+  padding-bottom: 50px;
+}
+
 @media (min-width: 991px) and (min-width: 768px) {
   nav.navbar .home__section {
     height: 37.5em;
