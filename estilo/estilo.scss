@@ -188,8 +188,10 @@ a {
     body {
         min-height: 100vh
     }
-    footer{
-        margin-top: 30px;
+    .footer--fix{
+       position: absolute;
+       width: 100%;
+       bottom: 0;
     }
 }
 
