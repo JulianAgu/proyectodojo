@@ -207,6 +207,14 @@ a img {
           justify-content: space-between;
 }
 
+iframe {
+  margin: auto;
+}
+
+.challenge {
+  text-align: center;
+}
+
 @media (min-width: 991px) and (min-width: 768px) {
   nav.navbar .home__section {
     height: 37.5em;
@@ -242,6 +250,14 @@ a img {
     width: 100%;
     bottom: 0;
   }
+}
+
+.separator {
+  border-top: 1px solid white;
+}
+
+.sensei-text {
+  margin-left: 2.5em;
 }
 
 @media (max-width: 990px) {
@@ -332,6 +348,9 @@ a img {
     display: -ms-flexbox;
     display: flex;
     text-align: center;
+  }
+  .sensei-pic {
+    display: block;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

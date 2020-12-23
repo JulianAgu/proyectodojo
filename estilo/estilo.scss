@@ -166,7 +166,12 @@ a {
     display: flex;
     justify-content: space-between;
 }
-
+iframe{
+    margin: auto;
+}
+.challenge{
+    text-align: center;
+}
 
 @media (min-width: 991px){
     nav.navbar {
@@ -194,7 +199,12 @@ a {
        bottom: 0;
     }
 }
-
+.separator{
+    border-top: 1px solid white;
+}
+.sensei-text{
+    margin-left: 2.5em;
+}
 
 @media (max-width:990px){
     #navbarNav{
@@ -280,6 +290,11 @@ a {
        display: flex;
        text-align: center;
     }
+    .sensei-pic{
+        display: block;
+    }
+    
+
 }
 
 
