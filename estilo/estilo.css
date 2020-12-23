@@ -94,49 +94,14 @@ nav ul li a:hover {
 }
 
 .sensei p {
-  padding: 5px;
+  padding: 0.3125em;
 }
 
 .sensei {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
-}
-
-.sensei img:hover {
-  width: 200px;
-  height: 200px;
-  -webkit-animation-name: imagines;
-          animation-name: imagines;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-@-webkit-keyframes imagines {
-  from {
-    width: 9rem;
-    height: 11rem;
-  }
-  to {
-    width: 200px;
-    height: 200px;
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@keyframes imagines {
-  from {
-    width: 9rem;
-    height: 11rem;
-  }
-  to {
-    width: 200px;
-    height: 200px;
-    width: 200px;
-    height: 200px;
-  }
+  padding: 0.625em;
 }
 
 #btn--Inscripcion {
@@ -216,7 +181,7 @@ iframe {
 }
 
 .distance-ft {
-  padding-bottom: 50px;
+  padding-bottom: 3.125em;
 }
 
 @media (min-width: 991px) and (min-width: 768px) {
@@ -303,7 +268,7 @@ iframe {
     border-top: none;
     padding-top: 0;
     position: relative;
-    margin-top: 30px;
+    margin-top: 1.875em;
   }
   .titulo {
     position: relative;
@@ -339,13 +304,13 @@ iframe {
   }
   .titulo h2 {
     margin: 0;
-    margin-left: 15px;
+    margin-left: 0.9375em;
   }
   .footer--icons {
     display: inline-block;
   }
   .footer--icons a {
-    padding-right: 16px;
+    padding-right: 1em;
   }
   .footer-web {
     display: -webkit-box;
@@ -357,11 +322,12 @@ iframe {
     display: block;
   }
   .sensei-text {
-    margin-left: -13px;
-    margin-top: 15px;
+    margin-left: -0.8125em;
+    margin-top: 0.9375em;
   }
-  .sensei_mobile-pic {
-    margin-left: 30%;
+  .sensei img {
+    width: 100%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

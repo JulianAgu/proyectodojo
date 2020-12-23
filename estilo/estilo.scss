@@ -93,32 +93,15 @@ nav ul li a:hover {
     
 }
 .sensei p{
-    padding: 5px;
+    padding: 0.3125em;
 }
 .sensei{
     display: flex;
-    padding: 10px;
+    padding: 0.625em;
 }
 
-.sensei img:hover{
-    @include sizes(200px,200px);
-    animation-name: imagines;
-    animation-duration: 2s;
-}
-@keyframes imagines{
-    from{
-        width: 9rem;
-        height: 11rem;
-    }
-    to{
-        @include sizes(200px,200px);
-        width: 200px;
-        height: 200px;
-    }
-}
 #btn--Inscripcion {
     color: black;
-
 }
 .btn-insc {
    margin: 2%;
@@ -173,7 +156,7 @@ iframe{
     text-align: center;
 }
 .distance-ft {
-    padding-bottom: 50px;
+    padding-bottom: 3.125em;
 }
 @media (min-width: 991px){
     nav.navbar {
@@ -249,7 +232,7 @@ iframe{
         border-top: none;
         padding-top: 0;
         position: relative;
-        margin-top: 30px;
+        margin-top: 1.875em;
     }
       
     .titulo{
@@ -280,12 +263,12 @@ iframe{
     }
     .titulo h2{
         margin: 0;
-        margin-left: 15px;
+        margin-left:  0.9375em;
     }
     .footer--icons{
         display: inline-block;
         a{
-            padding-right: 16px;
+            padding-right: 1em;
         }
     }
     .footer-web{
@@ -296,11 +279,12 @@ iframe{
         display: block;
     }
     .sensei-text{
-        margin-left: -13px;
-        margin-top: 15px;
+        margin-left: -0.8125em;
+        margin-top: 0.9375em;
     }    
-    .sensei_mobile-pic{
-        margin-left: 30%;
+    .sensei img{
+        width: 100%;
+        height: auto;
     }
 }
 
